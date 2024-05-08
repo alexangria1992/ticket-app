@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 //Routes
 app.use('/api/users', require('./routes/UserRoutes'));
 app.use(errorHandler);
-app.use('/api/users/login', require('./routes/UserRoutes'));
+// app.use('/login', require('./routes/UserRoutes'));
 
 app.listen(PORT, () =>
   console.log(colors.cyan(`Server started on port ${PORT}`))
